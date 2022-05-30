@@ -4,9 +4,11 @@ var containerEl = $(".container");
 
 //This will be the function that makes the save button save the text and time that text is logged for 
 $(".saveBtn").on("click", function(){
+    //assigning the variables text and hour to the information under id in html and the information in the inserttext classes in html
   var text= containerEl.find(".inserttext").val();
   var hour = $(this).parent().attr("id");
-  console.log(hour)
+  //sending the above variables to localstorage when the save button is clicked
+  localStorage.setItem(text, hour);
   
   
 })
