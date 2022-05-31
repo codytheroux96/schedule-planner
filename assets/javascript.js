@@ -14,15 +14,15 @@ $(".saveBtn").on("click", function () {
     console.log(hour);
 })
 // this will pull what is saved in local storage and place it in the correct hour row on the page
-$("#hour9 .inserttext").val(localStorage.getItem("9"))
-$("#hour10 .inserttext").val(localStorage.getItem("10"));
-$("#hour11 .inserttext").val(localStorage.getItem("11"));
-$("#hour12 .inserttext").val(localStorage.getItem("12"));
-$("#hour13 .inserttext").val(localStorage.getItem("13"));
-$("#hour14 .inserttext").val(localStorage.getItem("14"));
-$("#hour15 .inserttext").val(localStorage.getItem("15"));
-$("#hour16 .inserttext").val(localStorage.getItem("16"));
-$("#hour17 .inserttext").val(localStorage.getItem("17"));
+$("#9 .inserttext").val(localStorage.getItem("9"))
+$("#10 .inserttext").val(localStorage.getItem("10"));
+$("#11 .inserttext").val(localStorage.getItem("11"));
+$("#12 .inserttext").val(localStorage.getItem("12"));
+$("#13 .inserttext").val(localStorage.getItem("13"));
+$("#14 .inserttext").val(localStorage.getItem("14"));
+$("#15 .inserttext").val(localStorage.getItem("15"));
+$("#16 .inserttext").val(localStorage.getItem("16"));
+$("#17 .inserttext").val(localStorage.getItem("17"));
 
 //this will be the function that tracks the hour we are in and declare it the past, present, or future
 function hourTracker () {
