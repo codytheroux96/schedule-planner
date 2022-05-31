@@ -35,7 +35,7 @@ function hourTracker () {
             $(this).removeClass("past");
             $(this).removeClass("present");
             $(this).addClass("future");
-        } if (currentTime = otherTime) {
+        }else {
             $(this).removeClass("past");
             $(this).addClass("present");
             $(this).removeClass("future");
