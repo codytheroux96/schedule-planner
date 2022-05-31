@@ -28,7 +28,7 @@ $("#hour17 .inserttext").val(localStorage.getItem("hour17"));
 function hourTracker () {
     var currentTime = moment().hours();
     $(".inserttext").each(function () {
-        var otherTime = ($(this).parent().attr("id"));
+        var otherTime = parseInt("hour");
        if (currentTime > otherTime) {
             $(this).addClass("past");
             $(this).removeClass("present");
