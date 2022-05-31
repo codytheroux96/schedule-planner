@@ -1,5 +1,7 @@
 // This will be the date and time displaying to the ID currentDay using moment.js that I linked in my html
-$("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"));
+setInterval(function(){
+$("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+}, 1000);
 var containerEl = $(".container");
 
 //This will be the function that makes the save button save the text and time that text is logged for 
